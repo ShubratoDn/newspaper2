@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* reusable component */
+:root{
+    --defClr: #269226;
+    --black: #202020;
+    --vanish: #dddddd;
+    --boder:#26922633 ;
+}
+
+body{
+    font-family: 'Noto Serif', serif;
+}
+
+.btn{
+    border: 1px solid var(--defClr);
+    padding: 8px 25px;
+    background-color: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn:hover{
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.btn-def-out{
+    background-color: var(--defClr);
+    color: white !important;
+    transition: background-color .5s, color .3s .2s!important;
+}
+.btn-def-out:hover{
+    background-color: white !important;
+    color: var(--defClr) !important;
+}
+
+.border{
+    border: 1px solid red;
+}
+
+/* ========================== */
+/* NAVBAR DECORATION STARTS */
+/* ========================== */
+nav{
+    border-top: 1px solid var(--defClr) ;
+    padding: 10px 0;
+}
+
+/* NAV TOP */
+.nav-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-bottom: 20px;
+}
+.nav-top-left{
+    width: 30%;
+}
+.nav-top-right{
+    width: 30%;
+}
+
+/* logo */
+.nav-brand{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo{
+    width: 300px;
+    display: inline-block;
+}
+
+/* navbar */
+
+.navbar{
+    position: sticky;
+}
+
+.nav-hor-menu{
+    text-align: center;
+    border: 1px solid var(--vanish);
+    padding: 5px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+
+.nav-item{
+    margin-right:15px;
+    list-style-type: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    transition: .5s;
+}
+
+.nav-link:hover{
+    color: var(--defClr);
+    text-decoration: underline;
+}
+
+/* hamburger */
+.hamburger{
+    width: auto;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black) ;
+    padding: 20px 20px !important;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--defClr);
+}
+
+.hamburger button{
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background: none;
+    color: white;
+}
+
+.tgl-icon{
+    height: 2px;
+    width: 15px;
+    background: white;
+    margin: 10px;
+    position: relative;
+    border-radius: 10%;
+}
+
+.tgl-icon::before,
+.tgl-icon::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 130%;
+    left: 0;
+    background-color: var(--vanish);
+}
+
+.tgl-icon::after{
+    top: -7px;
+}
+
+.tgl-icon::before{
+    top: 7px;
+}
+
+
+/* ============================== */
+/* news template */
+/* ============================== */
+.news-img img{
+    max-width: 100%;
+}
+
+.news-info{
+    padding:0px 15px;
+}
+
+.news-info .title{
+    font-size: 18px;
+    font-weight: bolder;
+    transition: .3s;
+}
+
+.news-info .summary{
+    text-align: justify;
+    font-size: 15px;
+    color: #464646;
+}
+
+.news-box{
+    border-right: 1px solid var(--boder);
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.news-box:hover .news-info .title{
+    color: var(--defClr);
+}
+
+.page-link{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+}
+
+.section{
+    border-bottom: 1px solid var(--boder);
+    margin-bottom: 30px;
+}
+
+.section-title{
+    margin: 15px;
+    padding: 10px 25px;
+    border-left:10px solid var(--defClr);
+    background: linear-gradient(to right, #26922634, rgb(245, 245, 245));
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: white;
+    transition: .5s;
+}
