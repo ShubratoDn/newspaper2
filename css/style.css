@@ -45,6 +45,15 @@ body{
     border: 1px solid red;
 }
 
+.list-style-none{
+    list-style: none;
+}
+
+.decoration-none{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* ========================== */
 /* NAVBAR DECORATION STARTS */
 /* ========================== */
@@ -236,3 +245,117 @@ nav{
     background-color: white;
     transition: .5s;
 }
+
+
+/* FOOTER */
+footer{
+    background-color: #2F2F2F;
+    color: white;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer li a{ 
+    text-decoration: none;
+    color: inherit;
+}
+
+.foot-service li{
+    min-width: 25%;
+    float: left;
+}
+
+.clear-fix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.foot-service li a{ 
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+.foot-service li a i{
+    padding-right: 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.foot-service li:hover i{
+    color: var(--defClr);
+}
+
+.foot-top p{
+    font-size: 20px;
+}
+
+.foot-top{
+    padding: 30px 0;
+}
+
+footer hr{
+    border-top: 1px solid rgba(236, 236, 236, 0.589);
+    border-collapse: collapse;
+    border-bottom: none;
+}
+
+/* foote explore */
+.foot-explore{
+    padding: 20px 0;
+    background-color: #4C4C4C;
+}
+
+.foot-explore .title{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.foot-explore-nav li{
+    min-width: 16.6%;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.foot-explore-nav li:hover a{
+    text-decoration: underline;
+    text-decoration-color: var(--defClr);
+}
+
+/* footer content info */
+.footer-content-info ul li{
+    float: left;
+    font-size: 12px;
+    padding-right: 15px;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+}
+
+.footer-content-info ul{
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.copy-text p{
+    font-size: 12px;
+    margin: auto;
+    margin-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.377);
+    width: fit-content;
+}
+
+.copy-text span{
+    color: rgb(0, 255, 55);
+}
+

@@ -4,3 +4,6 @@ desgin list:
 
 For grid style
 https://www.ittefaq.com.bd/
+
+footer
+https://www.bbc.com/news/world
