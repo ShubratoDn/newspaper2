@@ -22,10 +22,17 @@ html {
 .container-lg,
 .container-xl {
   width: 100%;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 55px;
+  padding-left: 55px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (max-width: 576px){
+  .container-fluid{
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
 
 @media (min-width: 576px) {
